@@ -54,6 +54,5 @@ export class EventsComponent implements OnInit {
 
   OpenModal(event:any){
     this.selected_event = event
-    console.log(this.selected_event)
   }
 }

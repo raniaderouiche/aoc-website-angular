@@ -20,7 +20,7 @@
                       <div class="portfolio-hover">
                           <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                       </div>
-                      <img class="img-fluid" src="{{item?.cover_image}}" alt="..." />
+                      <img class="img-fluid" src="{{item?.cover_image}}" loading="lazy" alt="..." />
                   </a>
                   <div class="portfolio-caption">
                       <div class="portfolio-caption-heading">{{item?.name}}</div>
@@ -45,11 +45,29 @@
                             <!-- Event details-->
                             <h2 class="text-uppercase">{{selected_event.name}}</h2>
                             <p class="item-intro text-muted">{{selected_event.date}}</p>
-                            <!-- <img class="img-fluid d-block mx-auto" src="{{selected_event.cover_image}}" alt="..." /> -->
                        
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+                                <div class="carousel-inner">
+                                <div *ngFor="let item of selected_event.image_paths; let i = index" >
+                                    <div class="carousel-item" [class.active]="i === 0">
+                                        <img src="{{item}}" class="d-block w-100" alt="..." loading="lazy">
+                                    </div>
+                                </div>
+                                  
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
                             
-                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                            <ul class="list-inline">
+                            <p>{{selected_event.description}}</p>
+                            <!-- <ul class="list-inline">
                                 <li>
                                     <strong>Client:</strong>
                                     Threads
@@ -58,10 +76,10 @@
                                     <strong>Category:</strong>
                                     Illustration
                                 </li>
-                            </ul>
+                            </ul> -->
                             <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                 <i class="fas fa-xmark me-1"></i>
-                                Close Project
+                                Close Event
                             </button>
                         </div>
                     </div>
