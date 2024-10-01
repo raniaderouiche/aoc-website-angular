@@ -1,0 +1,43 @@
+[ 
+  {  
+    "id": 1,  
+    "name": "Design Night Hackathon",  
+    "date": "17-05-2023",  
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.",
+    "image_paths":["assets/media/design_night/cover.jfif"],
+    "cover_image": "assets/media/design_night/cover.jfif" 
+  },  
+  {  
+    "id": 1,  
+    "name": "Graduation Ceremony 2023",  
+    "date": "11-07-2023",  
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.",
+    "image_paths":[""],
+    "cover_image": "assets/media/graduation2023/cover.jpg" 
+  },  
+  {  
+    "id": 1,  
+    "name": "Opening/Hackathon 2021",  
+    "date": "17-11-2021",  
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.",
+    "image_paths":["assets/media/hackathon2021/0.jpg",
+                    "assets/media/hackathon2021/1.jpg",
+                    "assets/media/hackathon2021/2.jpg",
+                    "assets/media/hackathon2021/3.jpg",
+                    "assets/media/hackathon2021/4.jpg",
+                    "assets/media/hackathon2021/5.jpg",
+                    "assets/media/hackathon2021/6.jpg",
+                    "assets/media/hackathon2021/7.jpg",
+                    "assets/media/hackathon2021/8.jpg",
+                    "assets/media/hackathon2021/9.jpg"],
+    "cover_image": "assets/media/hackathon2021/cover.jpg"   
+  },  
+  {  
+    "id": 1,  
+    "name": "AOC FSB Gambit",  
+    "date": "19-5-2022",  
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.",
+    "image_paths":[],
+    "cover_image": "assets/media/chess/cover.jpg"   
+  }
+]  

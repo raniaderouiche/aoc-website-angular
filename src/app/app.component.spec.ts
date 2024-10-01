@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'aoc-website-angular'`, () => {
+  it(`should have as title 'art-of-code-website'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('aoc-website-angular');
+    expect(app.title).toEqual('art-of-code-website');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('aoc-website-angular app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('art-of-code-website app is running!');
   });
 });

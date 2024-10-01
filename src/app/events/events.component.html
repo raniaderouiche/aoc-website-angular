@@ -1,0 +1,72 @@
+<section class="page-section bg-light" id="portfolio">
+  <div class="container">
+      <div class="text-center">
+          <h2 class="section-heading text-uppercase">Highlights</h2>
+          <h3 class="section-subheading text-muted">A peak into some of our previous events.</h3>
+      </div>
+      <div class="d-flex justify-content-center">
+        <ul class="pagination">
+          <li class="page-item"><button [disabled]="current_page == 1" class="page-link">Previous</button></li>
+          <li class="page-item" *ngFor="let page of setupPagination()" [class.active]="current_page === page" (click)="onPageChange(page)"><a class="page-link">{{page}}</a></li>
+          <li class="page-item"><button class="page-link">Next</button></li>
+        </ul>
+      </div>
+      
+      <div class="row">
+          <div *ngFor="let item of DisplayList(current_page)" class="col-lg-4 col-sm-6 mb-4">
+              <!-- Portfolio item 1-->
+              <div class="portfolio-item">
+                  <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1" (click)="OpenModal(item)">
+                      <div class="portfolio-hover">
+                          <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                      </div>
+                      <img class="img-fluid" src="{{item?.cover_image}}" alt="..." />
+                  </a>
+                  <div class="portfolio-caption">
+                      <div class="portfolio-caption-heading">{{item?.name}}</div>
+                      <div class="portfolio-caption-subheading text-muted">{{item?.date}}</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+  <!-- Portfolio Modals-->
+  <!-- Portfolio item 1 modal popup-->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <!-- Event details-->
+                            <h2 class="text-uppercase">{{selected_event.name}}</h2>
+                            <p class="item-intro text-muted">{{selected_event.date}}</p>
+                            <!-- <img class="img-fluid d-block mx-auto" src="{{selected_event.cover_image}}" alt="..." /> -->
+                       
+                            
+                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                            <ul class="list-inline">
+                                <li>
+                                    <strong>Client:</strong>
+                                    Threads
+                                </li>
+                                <li>
+                                    <strong>Category:</strong>
+                                    Illustration
+                                </li>
+                            </ul>
+                            <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                <i class="fas fa-xmark me-1"></i>
+                                Close Project
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
