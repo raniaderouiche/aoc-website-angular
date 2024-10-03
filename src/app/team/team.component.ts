@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TeamComponent implements OnInit {
 
-  constructor() { }
+  url: string = '/assets/data/team.json';
+  list_items:any = [];
+
+  constructor(private http: HttpClient) { }
 
   ngOnInit() {
+    this.getTeam()
+  }
+
+  getTeam(){
+    this.http.get(this.url).subscribe(res => {
+      this.list_items = res;
+    });
   }
 
 }

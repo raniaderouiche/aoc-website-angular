@@ -1,0 +1,37 @@
+[   
+    {
+        "name": "Mohamed Ali Jelidi",
+        "role": "Club Founder & Supervisor",
+        "image_path": "assets/media/team/dali.jpeg"
+    },
+    {
+        "name": "Yasmine Attyaoui",
+        "role": "Club President",
+        "image_path": "assets/media/team/yasmine.jpeg"
+    },
+    {
+        "name": "Tayssir Ben Othmen",
+        "role": "SAIL Project Initiator",
+        "image_path": "assets/media/team/tayssir.jpeg"
+    },
+    {
+        "name": "Cyrine Karoui",
+        "role": "SAIL Project Manager",
+        "image_path": "assets/media/team/cyrine.jpeg"
+    },
+    {
+        "name": "Rania Derouiche",
+        "role": "Technical Manager",
+        "image_path": "assets/media/team/rania.jpeg"
+    },
+    {
+        "name": "Mohamed Habib Doggui",
+        "role": "Data Engineer",
+        "image_path": "assets/media/team/doggui.jpeg"
+    },
+    {
+        "name": "Dr Fadi Kacem",
+        "role": "Club Coordinator",
+        "image_path": "assets/media/team/fedi.jpg"
+    }
+]
