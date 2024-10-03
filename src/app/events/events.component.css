@@ -1,16 +1,15 @@
 .highlight-container {
     display: flex;
-    flex-direction: column; /* Stack videos vertically */
-    gap: 10px; /* Adjust this value to change the space between videos */
-    max-width: auto; /* Limit the width of the container */
-    /*margin: auto;  Center the container */
+    flex-direction: column;
+    gap: 10px; 
+    max-width: auto; 
 }
 .video-container {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
-    border: 1px solid #ccc; /* Optional: Add a border around each video */
+    border: 1px solid #ccc; 
 }
 .video-container iframe {
     position: absolute;
@@ -20,11 +19,11 @@
     height: 100%;
 }
 .text-container {
-    padding: 20px; /* Add some padding for spacing */
+    padding: 20px; 
 }
 
 @media (max-width: 600px) {
     .container {
-        flex-direction: column; /* Stack elements on smaller screens */
+        flex-direction: column; 
     }
 }
